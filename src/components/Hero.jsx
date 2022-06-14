@@ -3,12 +3,13 @@ import downloadButton from '../assets/download.svg'
 import heroImg from '../assets/herodesk.png'
 import {DiAndroid} from 'react-icons/di'
 import {AiOutlineRight,AiFillApple,AiOutlineDesktop} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
-    <section className='bg-[#128c7e] md:bg-white h-[64vh] md:h-screen'>
+    <section className='bg-[#128c7e] md:bg-white h-3/5'>
         {/* mobile hero  */}
-        <div className=" md:hidden flex flex-col justify-between text-center overflow-y-hidden h-full w-full pt-8 sm:px-10 px-4">
+        <div className=" md:hidden flex flex-col justify-between text-center overflow-y-hidden h-[85vh] w-full pt-8 sm:px-10 px-4">
             <h2 className="text-base text-white font-bold ">Simple. Secure. </h2>
             <h2 className="text-base text-white font-bold">Reliable Messaging.</h2>
             <p className='font-semibold text-sm text-white py-3'>With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p>
@@ -17,7 +18,7 @@ function Hero() {
         </div>
 
         {/* desktop hero  */}
-        <div className="hidden md:flex justify-center h-[55vh] xl:px-80 px-10 py-8">
+        <div className="hidden md:flex justify-center  xl:px-80 px-10 py-8">
             {/* left side  */}
             <div className='xl:px-20 px-10 mt-20'>
             <h2 className="text-3xl text-black font-normal pb-4">Simple. Secure. </h2>
@@ -25,21 +26,21 @@ function Hero() {
             <p className='font-normal text-base text-black py-3 leading-6'>With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p>
             <p className='opacity-90 text-gray-800 font-semibold'>*Data charges may apply.contact your provider for details</p> 
             
-            <a className='text-[#1cb39b] flex gap-3 mt-8 items-center font-semibold text-lg pt-3' href="/"> 
+            <Link className='text-[#1cb39b] flex gap-3 mt-8 items-center font-semibold text-lg pt-3' to="/download"> 
               <DiAndroid /> 
                Android 
               <AiOutlineRight />
-            </a>
-            <a className='text-[#1cb39b] flex gap-3 mt-4 items-center font-semibold text-lg pt-3' href="/"> 
+            </Link>
+            <Link className='text-[#1cb39b] flex gap-3 mt-4 items-center font-semibold text-lg pt-3' to="/download"> 
               <AiFillApple /> 
                 Iphone
               <AiOutlineRight />
-            </a>
-            <a className='text-[#1cb39b] flex gap-3 mt-4 items-center font-semibold text-lg pt-3' href="/"> 
+            </Link>
+            <Link className='text-[#1cb39b] flex gap-3 mt-4 items-center font-semibold text-lg pt-3' to="/download"> 
               <AiOutlineDesktop /> 
                Mac or Windows PC
               <AiOutlineRight />
-            </a>
+            </Link>
             </div>
             {/* right side  */}
             <div className='h-full'>
