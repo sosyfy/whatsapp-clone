@@ -61,6 +61,12 @@ function Nav() {
       link: "/",
     },
   ];
+
+  const removeSidebar = ()=>{
+    setNavOpen(false)
+    console.log("hbjkc");
+  }
+
   return (
     <nav
       className={`flex justify-between container mx-auto  relative w-full items-center  px-4 md:py-3 md:justify-around  top-0 ${
@@ -106,13 +112,13 @@ function Nav() {
         } duration-500 top-0  z-50 w-full h-screen px-6 pt-6 text-white font-semibold capitalize flex items-start  flex-col lg:hidden bg-[#075e54]`}
       >
         <li className="w-full flex justify-between items-center mb-6">
-          <img className="" src={logo} alt="Whatsappp logo" />
+          <Link to='/'> <img className=""  onClick={() => setNavOpen(false)} src={logo} alt="Whatsappp logo" /></Link>
           <AiOutlineClose
             onClick={() => setNavOpen(false)}
             className="text-2xl text-white"
           />
         </li>
-        <NavList links={mobilelinks} />
+        <NavList links={mobilelinks} removeSidebar={removeSidebar} />
         <li className="pl-4">
           <select
             name="langauge"
