@@ -69,14 +69,14 @@ function Nav() {
 
   return (
     <nav
-      className={`flex justify-between container mx-auto  relative w-full items-center  px-4 md:py-3 md:justify-around  top-0 ${
+      className={`flex justify-between container mx-auto ${inHomepage!=='/' ? "fixed" : "relative"} w-full items-center  px-4 md:py-3 md:justify-around  top-0 ${
         inHomepage ==="/" ? "py-[3rem]" : "py-2"
       } bg-[#128c7e]`}
     >
       {/*mobile logo */}
       {/*mobile logo on homepage  */}
       { inHomepage ==="/" && (
-        <div className="ml-[40vw] absolute  top-12 md:hidden">
+        <div className="ml-[40vw] absolute   top-12 md:hidden">
           <Link to='/'>
           <img className="h-16" src={logo} alt="Whatsappp logo" />
           </Link>
@@ -84,7 +84,7 @@ function Nav() {
       )}
       {/* mobile logo on other pages */}
       { ( inHomepage !== "/") && (
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <Link to='/'>
           <img className="h-8" src={logo} alt="Whatsappp logo" />
           </Link>

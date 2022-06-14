@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section className='bg-[#128c7e] md:bg-white h-3/5'>
         {/* mobile hero  */}
-        <div className=" md:hidden flex flex-col justify-between text-center overflow-y-hidden h-[85vh] w-full pt-8 sm:px-10 px-4">
+        <div className=" md:hidden flex flex-col justify-between text-center overflow-y-hidden h-[85vh] w-full pt-8  sm:px-10 px-4">
             <h2 className="text-base text-white font-bold ">Simple. Secure. </h2>
             <h2 className="text-base text-white font-bold">Reliable Messaging.</h2>
             <p className='font-semibold text-sm text-white py-3'>With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p>
