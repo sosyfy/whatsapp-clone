@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Security from "./pages/Security";
 import AboutPage from "./pages/AboutPage";
 import Stories from "./pages/Stories";
+import Android from "./pages/Android";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/security' element={<Security/>} />
         <Route path='/about' element={<AboutPage/>} />
         <Route path='/stories' element={<Stories/>} />
+        <Route path='/android' element={<Android/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

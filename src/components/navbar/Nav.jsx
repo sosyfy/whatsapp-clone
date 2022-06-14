@@ -28,7 +28,7 @@ function Nav() {
     },
     {
       name: "help center",
-      link: "https://faq.whatsapp.com/",
+      link: "/",
     },
     {
       name: "get in touch",
@@ -69,7 +69,7 @@ function Nav() {
 
   return (
     <nav
-      className={`flex justify-between container mx-auto ${inHomepage!=='/' ? "fixed" : "relative"} w-full items-center  px-4 md:py-3 md:justify-around  top-0 ${
+      className={`flex justify-between container mx-auto w-screen items-center  px-4 md:py-3 md:justify-around  top-0 ${
         inHomepage ==="/" ? "py-[3rem]" : "py-2"
       } bg-[#128c7e]`}
     >

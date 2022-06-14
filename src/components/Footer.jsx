@@ -56,7 +56,7 @@ function Footer() {
   const download = [
     {
       name: "mac/Pc",
-      link: "https://play.google.com/store/apps/details?id=com.whatsapp",
+      link: "/download",
     },
     {
       name: "android",
